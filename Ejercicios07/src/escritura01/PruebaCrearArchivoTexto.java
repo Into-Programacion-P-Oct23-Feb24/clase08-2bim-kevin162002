@@ -9,16 +9,20 @@ public class PruebaCrearArchivoTexto {
         Scanner entrada = new Scanner(System.in);
         String cadenaFinal = "";
         
+        for(int i = 0; i <= 2; i++){
         System.out.println("Ingrese su nombre");
         String nombre = entrada.nextLine();
+        //entrada.nextLine();
         System.out.println("Ingrese su apellido");
         String apellido = entrada.nextLine();
+        //entrada.nextLine();
         System.out.println("Ingrese su edad");
         int edad = entrada.nextInt();
+        entrada.nextLine();
         
         cadenaFinal = String.format("%s%s %s %d\n", cadenaFinal, nombre, 
                 apellido, edad);
-        
+        }
         CrearArchivoTexto.agregarRegistros(cadenaFinal);
         
 
