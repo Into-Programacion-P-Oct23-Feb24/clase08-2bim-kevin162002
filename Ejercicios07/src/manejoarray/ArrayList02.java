@@ -31,6 +31,7 @@ public class ArrayList02 {
         while (bandera) {
             System.out.println("Ingrese un nombre de un país");
             pais = entrada.nextLine();
+            pais = obtenerMayuscula(pais);
             arreglo2.add(pais);
             System.out.println("Desea ingresar salir, ingrese (s)");
             opcion = entrada.nextLine();
@@ -40,6 +41,11 @@ public class ArrayList02 {
         }
         return arreglo2;
         
+    }
+    
+    public static String obtenerMayuscula(String mayus){
+        String dato = mayus.toUpperCase(); 
+        return dato;
     }
         
     public static String obtenerCadenaFinal(ArrayList<String> lista){
@@ -51,6 +57,7 @@ public class ArrayList02 {
         }
         return cadenaFinal;
     }    
+    
         /*
         ArrayList <String> arreglo2 = new ArrayList<>();
         
